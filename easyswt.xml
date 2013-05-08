@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<easyswt xmlns="http://www.panshihao.cn/easyswt"
+    package="cn.panshihao.easyswt"
+    versionCode="1"
+    versionName="1.0.0"
+    system="windows" 
+    bit="32">
+    
+    <welcome windowId="main" />
+    
+    <window id="main" 
+        name="easyswt main"
+        class=".window.mainWindow"
+        />
+    
+    
+</easyswt>

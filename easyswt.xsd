@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.panshihao.cn/easyswt"
+	xmlns="http://www.panshihao.cn/easyswt"
+	elementFormDefault="qualified">
+	
+	<xs:element name="easyswt" >
+	    <xs:complexType>
+	    	<xs:complexContent>
+	    		<xs:extension base="easyswt_base">
+					<xs:sequence>
+						<xs:element name="welcome" maxOccurs="1" minOccurs="1" type="welcome_type"/>
+						<xs:element name="window" maxOccurs="unbounded" type="window_type" />
+					</xs:sequence>
+		   			<xs:attribute name="package" type="xs:string" default="cn.panshihao.easyswt" />
+		   			<xs:attribute name="versionCode" type="xs:integer" default="1" />
+		   			<xs:attribute name="versionName" type="xs:string" default="1.0.0" />
+		   			<xs:attribute name="system" type="xs:string" default="windows" />
+		   			<xs:attribute name="bit" type="xs:integer" default="32" />
+		   			
+	    		</xs:extension>
+	    	</xs:complexContent>
+	    	
+	    </xs:complexType>
+	    
+	</xs:element>
+
+	<xs:element name="window">
+		
+	</xs:element>
+
+
+	<xs:complexType name="easyswt_base">
+		<xs:annotation>
+			<xs:documentation>easyswt Base Type</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="id" type="xs:string" />
+		<xs:attribute name="name" type="xs:string" />
+	</xs:complexType>
+
+	<xs:complexType name="welcome_type">
+		<xs:annotation>
+			<xs:documentation>welcome type</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="easyswt_base">
+				<xs:attribute name="windowId" type="xs:string" />
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="window_type">
+		<xs:annotation>
+			<xs:documentation>window type</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="easyswt_base">
+				<xs:attribute name="class" type="xs:string" />
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window xmlns="http://www.panshihao.cn/easyswt"
+	width="100%"
+	height="100%"
+	location="center"
+	maximized="true">
+	
+	<title name="main window123123"
+		icon="@logo"/>
+	
+	<content>
+		<composite id="a" width="50%" height="80%" align="left">
+			<label id="">abc</label>
+			<composite background="#ff0000" id="ba" width="70%" height="50%">
+				<button>lkasdl</button>
+				<composite id="ba" width="70%" height="50%" align="right">
+					
+				</composite>
+			</composite>
+			<button width="100px" height="80%" id="cc">231asdasdasdasd23</button>
+			<button >bccc</button>
+			<button >ddd</button>
+		</composite>
+		<composite id="ca"   align="right">
+			<button >etet</button>
+			<button >egsf</button>
+		</composite>
+		
+	</content>
+	
+
+</window>
